@@ -2,7 +2,9 @@
 
 A live demonstration of Chrome's built-in Translation and Language Detection APIs, showcasing on-device AI translation with multilingual product reviews.
 
-🔗 **[Live Demo](https://web-ai-translation-demo.davebitter.com/)** | 📦 **[GitHub Repository](https://github.com/DaveBitter/web-ai-translation-demo)**
+🔗 **[Live Demo](https://web-ai-translation-demo.davebitter.com/)** | 📦 **[GitHub Repository](https://github.com/DaveBitter/web-ai-translation-demo)** | 📝 **[Read the Article](https://techhub.iodigital.com/articles/building-a-translation-demo-with-chromes-built-in-ai-apis)**
+
+![Demo of Chrome Translation API in action](./public/chrome-ai-translation-demo.gif)
 
 ## 🌟 Features
 
