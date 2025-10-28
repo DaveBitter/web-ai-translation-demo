@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chrome Translation API Demo
 
-## Getting Started
+A live demonstration of Chrome's built-in Translation and Language Detection APIs, showcasing on-device AI translation with multilingual product reviews.
 
-First, run the development server:
+## 🌟 Features
+
+- **Language Detection API**: Automatically detects the language of each review using Chrome's built-in AI
+- **Translation API**: Translate reviews on-demand to your preferred language
+- **On-Device Processing**: All AI processing happens locally using Google's Gemini Nano model
+- **Privacy-First**: No data leaves your device
+- **Beautiful UI**: Built with Next.js 16, Radix UI, and Tailwind CSS 4
+- **Fully Responsive**: Works seamlessly across desktop, tablet, and mobile
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Chrome 138 or later** (currently at version 141+)
+- At least 22GB of free disk space
+- 4GB+ VRAM
+
+### Enable Chrome Flags
+
+1. Navigate to `chrome://flags/#language-detection-api`
+2. Enable the **"Language Detection API"** flag
+3. Navigate to `chrome://flags/#optimization-guide-on-device-model`
+4. Enable **"Optimization Guide On Device Model"**
+5. **Restart Chrome**
+6. Go to `chrome://components/`
+7. Find **"Optimization Guide On Device Model"** and click **"Check for update"**
+
+### Run the Demo
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Page Load**: The demo automatically detects the language of each review
+2. **Language Badge**: Each review shows a badge with the detected language
+3. **System Language**: Reviews in your system language are highlighted
+4. **Translation**: Select a target language and click "Translate"
+5. **Model Download**: On first use, the translation model downloads (1-2GB)
+6. **View Toggle**: Switch between original and translated text anytime
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 16** (App Router)
+- **React 19**
+- **TypeScript 5**
+- **Tailwind CSS 4**
+- **Radix UI** (Dialog, Select, Label, etc.)
+- **Chrome's Translation API** (experimental)
+- **Chrome's Language Detection API** (experimental)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Resources
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Chrome AI Built-in APIs Documentation](https://developer.chrome.com/docs/ai/built-in-apis)
+- [Language Detection API](https://developer.chrome.com/docs/ai/language-detection)
+- [Translation API](https://developer.chrome.com/docs/ai/translator)
+- [Original Article](https://techhub.iodigital.com/articles/built-in-ai-in-chrome)
 
-## Deploy on Vercel
+## 👨‍💻 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Dave Bitter** - Google Developer Expert
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is open source and available for demonstration purposes.
+
+## 🙏 Acknowledgments
+
+- Chrome team for the built-in AI APIs
+- Radix UI for accessible component primitives
+- Vercel for Next.js and hosting
