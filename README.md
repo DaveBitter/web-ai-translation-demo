@@ -2,6 +2,8 @@
 
 A live demonstration of Chrome's built-in Translation and Language Detection APIs, showcasing on-device AI translation with multilingual product reviews.
 
+🔗 **[Live Demo](https://web-ai-translation-demo.davebitter.com/)** | 📦 **[GitHub Repository](https://github.com/DaveBitter/web-ai-translation-demo)**
+
 ## 🌟 Features
 
 - **Language Detection API**: Automatically detects the language of each review using Chrome's built-in AI

@@ -6,6 +6,7 @@ import ProductHero from "@/components/ProductHero";
 import ReviewCard from "@/components/ReviewCard";
 import TranslationBanner from "@/components/TranslationBanner";
 import Footer from "@/components/Footer";
+import GitHubCorner from "@/components/GitHubCorner";
 import { reviews } from "@/data/reviews";
 import { checkTranslationSupport } from "@/utils/translation";
 
@@ -24,6 +25,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <GitHubCorner />
       <ProductHeader />
 
       <main className="flex-1">
